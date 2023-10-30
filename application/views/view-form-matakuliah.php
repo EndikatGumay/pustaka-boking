@@ -5,11 +5,11 @@
 
 <body>
     <center>
-        <form action="<?= base_url('datasiswa/cetak');?>"method="post">
+        <form action="<?= base_url('matakuliah/cetak');?>"method="post">
             <table>
                 <tr>
                     <th colspan="3">
-                        Form Input Data Siswa
+                        Form Input Data Mata Kuliah
                     </th>
                 </tr>
                 <tr>
@@ -18,77 +18,30 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>Nama</th>
+                    <th>Kode MTK</th>
                     <th>:</th>
                     <td>
-                        <input type="text" value="<?= set_value('nama') ?>" name="kode" id="kode">
-                        <?=form_error('nama')?>
+                        <input type="text" value="<?= set_value('kode') ?>" name="kode" id="kode">
+                        <?=form_error('kode')?>
                     </td>
                 </tr>
                 <tr>
-                    <th>NIS</th>
+                    <th>Nama MTK</th>
                     <td>:</td>
                     <td>
-                        <input type="text" value="<?= set_value('nis')?>" name="nama" id="nama">
-                       <?=form_error('nis')?> 
+                        <input type="text" value="<?= set_value('nama')?>" name="nama" id="nama">
+                       <?=form_error('nama')?> 
                     </td>
                 </tr>
                 <tr>
-                    <th>Kelas</th>
-                    <th>:</th>
-                    <td>
-                        <input type="text" value="<?= set_value('kelas') ?>" name="kode" id="kode">
-                        <?=form_error('kelas')?>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Tanggal Lahir</th>
-                    <th>:</th>
-                    <td>
-                        <input type="text" value="<?= set_value('ttl') ?>" name="kode" id="kode">
-                        <?=form_error('ttl')?>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Tempat Lahir</th>
-                    <th>:</th>
-                    <td>
-                        <input type="text" value="<?= set_value('tempat') ?>" name="kode" id="kode">
-                        <?=form_error('tempat')?>
-                    </td>
-                </tr>
-                <tr>
-                <tr>
-                    <th>Alamat</th>
-                    <th>:</th>
-                    <td>
-                        <input type="text" value="<?= set_value('alamat') ?>" name="kode" id="kode">
-                        <?=form_error('alamat')?>
-                    </td>
-                </tr>
-                <tr>
-                <tr>
-                    <th>Jenis Kelamin</th>
-                    <th>:</th>
-                    <td>
-                        <input type="radio" name="jenis_kelamin" id="Laki-laki" value="Laki-laki" required>Laki-laki
-                        <input type="radio" name="jenis_kelamin" id="Perempuan" value="Perempuan" required>Perempuan
-                    </td>
-                </tr>
-                <tr>
-                <tr>
-                    <th>Agama</th>
+                    <th>SKS</th>
                     <td>:</td>
                     <td>
-                        <select name="agama" id="agama">
-                            <option value="">Pilih Agama</option>
-                            <option value="2">Islam</option>
-                            <option value="3">Kristen</option>
-                            <option value="4">Katolik</option>
-                            <option value="5">Budha</option>
-                            <option value="6">Hindu</option>
-                            <option value="7">Prostetan</option>
-                            <option value="8">Konghucu</option>
+                        <select name="sks" id="sks">
+                            <option value="">Pilih SKS</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
                     </td>
                 </tr>

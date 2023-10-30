@@ -15,30 +15,6 @@ class Admin extends CI_Controller
             'required' => 'Nis Harus diisi',
             'min_length' => 'Nis terlalu pendek'
         ]);
-        $this->form_validation->set_rules('kelas', 'Kelas', 'required|min_length[3]', [
-            'required' => 'Kelas Harus diisi',
-            'min_length' => 'kelas terlalu pendek'
-        ]);
-        $this->form_validation->set_rules('ttl', 'Tempat Tanggal Lahir', 'required|min_length[3]', [
-            'required' => 'ttl Harus diisi',
-            'min_length' => 'ttl terlalu pendek'
-        ]);
-        $this->form_validation->set_rules('tempat', 'Tempat Lahir', 'required|min_length[3]', [
-            'required' => 'tempat Harus diisi',
-            'min_length' => 'tempat terlalu pendek'
-        ]);
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required|min_length[3]', [
-            'required' => 'alamat Harus diisi',
-            'min_length' => 'alamat terlalu pendek'
-        ]);
-        $this->form_validation->set_rules('kelamin', 'Kelamin Siswa', 'required|min_length[3]', [
-            'required' => 'kelamin Harus diisi',
-            'min_length' => 'kelamin terlalu pendek'
-        ]);
-        $this->form_validation->set_rules('Agama', 'Agama Siswa', 'required|min_length[3]', [
-            'required' => 'agama Harus diisi',
-            'min_length' => 'agama terlalu pendek'
-        ]);
     if ($this->form_validation->run() != true) {
         $this->load->view('view-form-siswa');
         } else {
